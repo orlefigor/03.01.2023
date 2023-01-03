@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>03.01.2023</title>
+  </head>
+  <body>
+    <main>
+      <button id="function1">addElement</button>
+    </main>
+    <p id="display"></p>
+    <script>
+      function fn1() {
+        const element = document.createElement("p");
+        element.innerHTML = "tekst";
+        //const elementText = document.createTextNode("cos");
+        //element.appendChild(elementText);
+
+        element.style.color = "#f00";
+        element.style.backgroundColor = "#ff0";
+
+        element.addEventListener("click", function () {
+          this.remove();
+          //this.style.color = "#77f";
+          console.log(this);
+        });
+
+        display.appendChild(element);
+      }
+
+      function1.addEventListener("click", fn1);
+    </script>
+  </body>
+</html>
